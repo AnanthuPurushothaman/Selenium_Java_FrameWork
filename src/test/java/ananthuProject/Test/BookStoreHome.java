@@ -1,5 +1,7 @@
 package ananthuProject.Test;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -48,10 +50,14 @@ public class BookStoreHome extends BaseTest{
 			SelectCategory selCat= new SelectCategory(driver);
 			String mainCategory=mainCat;
 			String SubCategory=subCat;
-			
 			selCat.SelectSubCat(mainCategory,SubCategory);
 			
+			
 		}
+		
+		
+		
+		
 		
 		@DataProvider
 		public Object[][] testdtaTest() throws IOException {

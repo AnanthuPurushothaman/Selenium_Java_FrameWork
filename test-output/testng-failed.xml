@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ananthuProject.Test.BookStoreHome">
+      <class name="ananthuProject.Test.E2EActionsStandAlone">
         <methods>
+          <include name="addToCart"/>
           <include name="launchApplication"/>
           <include name="closeDriver"/>
-          <include name="goToCategory" invocation-numbers="4 11"/>
         </methods>
-      </class> <!-- ananthuProject.Test.BookStoreHome -->
+      </class> <!-- ananthuProject.Test.E2EActionsStandAlone -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
