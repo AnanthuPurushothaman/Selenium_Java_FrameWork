@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\gopik\AppData\Local\Temp\testng-eclipse-935366504\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">26 methods, 2 failed,   24 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Art and Photography)">goToCategory(Nonfiction, Art and Photography)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, House and Home)">goToCategory(Nonfiction, House and Home)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Self-Help and Relationships)">goToCategory(Nonfiction, Self-Help and Relationships)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Cooking, Food and Drink)">goToCategory(Nonfiction, Cooking, Food and Drink)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Trending on #BookTok)">goToCategory(Nonfiction, Trending on #BookTok)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Biography and Memoir)">goToCategory(Nonfiction, Biography and Memoir)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Celebrity Book Club Picks)">goToCategory(Nonfiction, Celebrity Book Club Picks)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Health and Wellness)">goToCategory(Nonfiction, Health and Wellness)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, True Crime)">goToCategory(Nonfiction, True Crime)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Business)">goToCategory(Nonfiction, Business)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Book-to-Screen Adaptations)">goToCategory(Nonfiction, Book-to-Screen Adaptations)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Religion and Spirituality)">goToCategory(Nonfiction, Religion and Spirituality)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Psychology)">goToCategory(Nonfiction, Psychology)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, View All Nonfiction)">goToCategory(Nonfiction, View All Nonfiction)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Crafts and Hobbies)">goToCategory(Nonfiction, Crafts and Hobbies)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, History and Geography)">goToCategory(Nonfiction, History and Geography)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Nature)">goToCategory(Nonfiction, Nature)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Science and Technology)">goToCategory(Nonfiction, Science and Technology)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Recently Published)">goToCategory(Nonfiction, Recently Published)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, New Age)">goToCategory(Nonfiction, New Age)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Popular Nonfiction)">goToCategory(Nonfiction, Popular Nonfiction)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, New York Times Best Sellers)">goToCategory(Nonfiction, New York Times Best Sellers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Coffee Table Books)">goToCategory(Nonfiction, Coffee Table Books)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Philosophy)">goToCategory(Nonfiction, Philosophy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, Award Winners)">goToCategory(Nonfiction, Award Winners)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ananthuProject.Test.BookStoreHome" class="method navigator-link" hash-for-method="goToCategory(Nonfiction, New Arrivals)">goToCategory(Nonfiction, New Arrivals)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ananthuProject.Test.BookStoreHome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Art and Photography)">
+                  </a> <!-- goToCategory(Nonfiction, Art and Photography) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Art and Photography)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;selectSubCategory&quot; is null
+	at ananthuProject.PageObjects.SelectCategory.SelectSubCat(SelectCategory.java:44)
+	at ananthuProject.Test.BookStoreHome.goToCategory(BookStoreHome.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, House and Home)">
+                  </a> <!-- goToCategory(Nonfiction, House and Home) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,House and Home)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [044b71a1aee00ec0d627418d256e59fc, getElementText {id=5AF1CAF275B8A614937DF07FFB2945AB_element_149}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\gopik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:9583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9583/devtool..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (044b71a1aee00ec0d627418d256e59fc)] -&gt; xpath: //div[@class=&apos;builder-blocks css-h47494&apos;]/div/a]
+Session ID: 044b71a1aee00ec0d627418d256e59fc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at ananthuProject.PageObjects.SelectCategory.lambda$0(SelectCategory.java:34)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at ananthuProject.PageObjects.SelectCategory.SelectSubCat(SelectCategory.java:34)
+	at ananthuProject.Test.BookStoreHome.goToCategory(BookStoreHome.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ananthuProject.Test.BookStoreHome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Self-Help and Relationships)">
+                  </a> <!-- goToCategory(Nonfiction, Self-Help and Relationships) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Self-Help and Relationships)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Cooking, Food and Drink)">
+                  </a> <!-- goToCategory(Nonfiction, Cooking, Food and Drink) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Cooking, Food and Drink)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Trending on #BookTok)">
+                  </a> <!-- goToCategory(Nonfiction, Trending on #BookTok) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Trending on #BookTok)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Biography and Memoir)">
+                  </a> <!-- goToCategory(Nonfiction, Biography and Memoir) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Biography and Memoir)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Celebrity Book Club Picks)">
+                  </a> <!-- goToCategory(Nonfiction, Celebrity Book Club Picks) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Celebrity Book Club Picks)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Health and Wellness)">
+                  </a> <!-- goToCategory(Nonfiction, Health and Wellness) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Health and Wellness)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, True Crime)">
+                  </a> <!-- goToCategory(Nonfiction, True Crime) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,True Crime)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Business)">
+                  </a> <!-- goToCategory(Nonfiction, Business) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Business)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Book-to-Screen Adaptations)">
+                  </a> <!-- goToCategory(Nonfiction, Book-to-Screen Adaptations) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Book-to-Screen Adaptations)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Religion and Spirituality)">
+                  </a> <!-- goToCategory(Nonfiction, Religion and Spirituality) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Religion and Spirituality)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Psychology)">
+                  </a> <!-- goToCategory(Nonfiction, Psychology) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Psychology)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, View All Nonfiction)">
+                  </a> <!-- goToCategory(Nonfiction, View All Nonfiction) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,View All Nonfiction)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Crafts and Hobbies)">
+                  </a> <!-- goToCategory(Nonfiction, Crafts and Hobbies) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Crafts and Hobbies)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, History and Geography)">
+                  </a> <!-- goToCategory(Nonfiction, History and Geography) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,History and Geography)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Nature)">
+                  </a> <!-- goToCategory(Nonfiction, Nature) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Nature)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Science and Technology)">
+                  </a> <!-- goToCategory(Nonfiction, Science and Technology) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Science and Technology)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Recently Published)">
+                  </a> <!-- goToCategory(Nonfiction, Recently Published) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Recently Published)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, New Age)">
+                  </a> <!-- goToCategory(Nonfiction, New Age) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,New Age)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Popular Nonfiction)">
+                  </a> <!-- goToCategory(Nonfiction, Popular Nonfiction) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Popular Nonfiction)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, New York Times Best Sellers)">
+                  </a> <!-- goToCategory(Nonfiction, New York Times Best Sellers) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,New York Times Best Sellers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Coffee Table Books)">
+                  </a> <!-- goToCategory(Nonfiction, Coffee Table Books) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Coffee Table Books)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Philosophy)">
+                  </a> <!-- goToCategory(Nonfiction, Philosophy) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Philosophy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, Award Winners)">
+                  </a> <!-- goToCategory(Nonfiction, Award Winners) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,Award Winners)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCategory(Nonfiction, New Arrivals)">
+                  </a> <!-- goToCategory(Nonfiction, New Arrivals) -->
+                  <span class="method-name">goToCategory</span>
+                  <span class="parameters">(Nonfiction,New Arrivals)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\gopik\AppData\Local\Temp\testng-eclipse-935366504\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ananthuProject.Test.BookStoreHome&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;goToCategory&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ananthuProject.Test.BookStoreHome --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(26);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'goToCategory')
+data.setCell(0, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(0, 3, 7133);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'goToCategory')
+data.setCell(1, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(1, 3, 5735);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'goToCategory')
+data.setCell(2, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(2, 3, 5479);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'goToCategory')
+data.setCell(3, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(3, 3, 5474);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'goToCategory')
+data.setCell(4, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(4, 3, 5160);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'goToCategory')
+data.setCell(5, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(5, 3, 4984);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'goToCategory')
+data.setCell(6, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(6, 3, 4811);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'goToCategory')
+data.setCell(7, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(7, 3, 4779);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'goToCategory')
+data.setCell(8, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(8, 3, 4621);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'goToCategory')
+data.setCell(9, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(9, 3, 4541);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'goToCategory')
+data.setCell(10, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(10, 3, 4537);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'goToCategory')
+data.setCell(11, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(11, 3, 4328);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'goToCategory')
+data.setCell(12, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(12, 3, 4301);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'goToCategory')
+data.setCell(13, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(13, 3, 4246);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'goToCategory')
+data.setCell(14, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(14, 3, 4245);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'goToCategory')
+data.setCell(15, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(15, 3, 4183);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'goToCategory')
+data.setCell(16, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(16, 3, 4098);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'goToCategory')
+data.setCell(17, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(17, 3, 4057);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'goToCategory')
+data.setCell(18, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(18, 3, 3901);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'goToCategory')
+data.setCell(19, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(19, 3, 3866);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'goToCategory')
+data.setCell(20, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(20, 3, 3851);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'goToCategory')
+data.setCell(21, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(21, 3, 3796);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'goToCategory')
+data.setCell(22, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(22, 3, 3743);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'goToCategory')
+data.setCell(23, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(23, 3, 3445);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'goToCategory')
+data.setCell(24, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(24, 3, 2762);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'goToCategory')
+data.setCell(25, 2, 'ananthuProject.Test.BookStoreHome')
+data.setCell(25, 3, 2704);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ananthuProject.Test.BookStoreHome</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkFooterLinks</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ananthuProject.Test.BookStoreHome</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, New Arrivals)</span>
+                <span class="method-start">5851 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">9599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">9809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Recently Published)</span>
+                <span class="method-start">13849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">17753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">17931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, New York Times Best Sellers)</span>
+                <span class="method-start">21954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">25822 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">26005 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Popular Nonfiction)</span>
+                <span class="method-start">30023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">33876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">34081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">goToCategory(Nonfiction, Art and Photography)</span>
+                <span class="method-start">40378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">47514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">47652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Biography and Memoir)</span>
+                <span class="method-start">51908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">56531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">56664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Business)</span>
+                <span class="method-start">61062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">63825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">64002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Cooking, Food and Drink)</span>
+                <span class="method-start">67900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">72000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">72210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Crafts and Hobbies)</span>
+                <span class="method-start">76445 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">79150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">79301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Health and Wellness)</span>
+                <span class="method-start">83238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">87568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">87735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, History and Geography)</span>
+                <span class="method-start">91794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">96042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">96244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">goToCategory(Nonfiction, House and Home)</span>
+                <span class="method-start">100361 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">103810 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">104034 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Nature)</span>
+                <span class="method-start">109588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">114369 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">114630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, New Age)</span>
+                <span class="method-start">119205 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">124190 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">124291 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Philosophy)</span>
+                <span class="method-start">129607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">135082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">135210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Psychology)</span>
+                <span class="method-start">140648 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">145191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">145385 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Religion and Spirituality)</span>
+                <span class="method-start">149941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">154243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">154467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Science and Technology)</span>
+                <span class="method-start">160525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">165063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">165513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Self-Help and Relationships)</span>
+                <span class="method-start">172091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">177571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">177755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, True Crime)</span>
+                <span class="method-start">184058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">188871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">189135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, View All Nonfiction)</span>
+                <span class="method-start">194385 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">200122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">200266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Trending on #BookTok)</span>
+                <span class="method-start">206089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">209886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">210039 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Award Winners)</span>
+                <span class="method-start">213914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">217972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">218173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Coffee Table Books)</span>
+                <span class="method-start">222286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">226533 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">226705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Celebrity Book Club Picks)</span>
+                <span class="method-start">229603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">234764 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">234954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goToCategory(Nonfiction, Book-to-Screen Adaptations)</span>
+                <span class="method-start">238927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">243111 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
