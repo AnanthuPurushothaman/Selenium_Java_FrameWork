@@ -38,7 +38,7 @@ public class SelectCategory extends AbstractComponent {
 																							// strings
 				.collect(Collectors.toList());
 
-		subTitleCat2.stream().forEach(y -> System.out.println(y));
+		//subTitleCat2.stream().forEach(y -> System.out.println(y));
 		System.out.println(subTitleCat2.size());
 		
 		selectSubCategory.click();
