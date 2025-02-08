@@ -20,15 +20,17 @@ public class ShoppingCartPage extends AbstractComponent {
 	@FindBy(xpath="//*[name()='path' and contains(@d,'M15.55 13c')]")
 	WebElement goToShoppingCart;
 	
-	@FindBy(xpath="//div[@class='MuiGrid-root MuiGrid-container MuiGrid-align-content-xs-flex-start']//div//h6[@class='MuiTypography-root jss3219 MuiTypography-subtitle1 MuiTypography-gutterBottom']")
-	List<WebElement> bookNameInCart;
+	@FindBy(css="a[aria-label='proceed to checkout']")
+			WebElement checkOut;
 	
 	public void goToCart(){
 		
 		goToShoppingCart.click();
 		
-	  	//bookNameInCart.stream().forEach(q->System.out.println(q.getText()));
-		System.out.println(bookNameInCart.size());
+	  
+	}
+	
+	public void proceedToCheckOut() {
+		checkOut.click();
 	}
 }
-//div[@class='MuiGrid-root MuiGrid-container MuiGrid-align-content-xs-flex-start']//div//h6[@class='MuiTypography-root jss3219 MuiTypography-subtitle1 MuiTypography-gutterBottom']

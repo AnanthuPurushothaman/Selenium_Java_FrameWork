@@ -28,6 +28,9 @@ public class LandingPage {
 @FindBy(xpath="//div[@class='builder-block builder-c6601fee21084f328cdc18cda136157b css-g9l40v']/div/div/a")	
 List<WebElement> myListFooter;	
 
+@FindBy(xpath="//div[@class='builder-block builder-f8b946096eab42efb0b044803f869be2 builder-has-component css-at3cpz builder-symbol']//span[@class='builder-text css-1qggkls']//span[1]")
+WebElement bannernoticeText;
+
 
 
 
@@ -64,6 +67,21 @@ List<WebElement> myListFooter;
 		}
 		titleList.stream().forEach(b->System.out.println(b));
 		driver.switchTo().window(mainWindow);
+		driver.close();
+		
+	}
+	
+	public boolean checkVisibilityOfPromoText() {
+		
+		if(bannernoticeText.isDisplayed()) {
+			
+			return true;
+		}
+		else {
+			
+			return false;
+		}
+		
 		
 	}
 

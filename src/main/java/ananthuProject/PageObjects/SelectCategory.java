@@ -33,6 +33,10 @@ public class SelectCategory extends AbstractComponent {
 	WebElement pagename;
 	By heading =By.xpath("(//h1[contains(text(), 'Discounted')])[1]");
 	
+	By subHeading= By.xpath("//h1[@class='MuiTypography-root MuiTypography-h1']");
+	
+	@FindBy(xpath="//h1[@class='MuiTypography-root MuiTypography-h1']")
+	WebElement subHeadingPage;
 
 	public void SelectSubCat(String mainCatName,String subCatName) throws InterruptedException {
 		
@@ -46,16 +50,29 @@ public class SelectCategory extends AbstractComponent {
 																							// strings
 				.collect(Collectors.toList());
 
-		subTitleCat2.stream().forEach(y -> System.out.println(y));
-		System.out.println(subTitleCat2.size());
+		//subTitleCat2.stream().forEach(y -> System.out.println(y));
+		//System.out.println(subTitleCat2.size());
 		
 		selectSubCategory.click();
 		
+		waitForElementToAppear(subHeading);
 		
 		
 		
 
-
+	}
+	
+	
+	public boolean checkForPageHeading() {
+		
+		if(subHeadingPage.isDisplayed()) {
+			
+			return true;
+		}
+		else {
+			
+			return false;
+		}
 	}
 	
 	public SelectedBookPage selecttheBook(String bookName) {
@@ -66,6 +83,8 @@ public class SelectCategory extends AbstractComponent {
 		
 		SelectedBookPage SelectBook= new SelectedBookPage(driver);
 		return SelectBook;
+		
+		
 		
 	}
 	

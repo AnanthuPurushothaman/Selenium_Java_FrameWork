@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="27" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-08T12:18:50 EST" name="Suite" finished-at="2025-02-08T12:29:18 EST" duration-ms="628576">
+    <groups>
+    </groups>
+    <test started-at="2025-02-08T12:18:50 EST" name="Test" finished-at="2025-02-08T12:29:18 EST" duration-ms="628576">
+      <class name="ananthuProject.Test.E2EActionsStandAlone">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@465232e9]" started-at="2025-02-08T12:28:48 EST" name="launchApplication" finished-at="2025-02-08T12:28:54 EST" duration-ms="6627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addToCart()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@465232e9]" started-at="2025-02-08T12:28:54 EST" name="addToCart" finished-at="2025-02-08T12:29:17 EST" duration-ms="22329" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [819e15f0ed14a27347629b497adcb87a, clickElement {id=1D174C2AD5A96B7A9A63EE66364F89FC_element_283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\gopik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2889/devtool..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (819e15f0ed14a27347629b497adcb87a)] -> css selector: a[aria-label='proceed to checkout']]
+Session ID: 819e15f0ed14a27347629b497adcb87a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [819e15f0ed14a27347629b497adcb87a, clickElement {id=1D174C2AD5A96B7A9A63EE66364F89FC_element_283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\gopik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2889/devtool..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (819e15f0ed14a27347629b497adcb87a)] -> css selector: a[aria-label='proceed to checkout']]
+Session ID: 819e15f0ed14a27347629b497adcb87a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at ananthuProject.PageObjects.ShoppingCartPage.proceedToCheckOut(ShoppingCartPage.java:34)
+at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@465232e9]" started-at="2025-02-08T12:29:17 EST" name="closeDriver" finished-at="2025-02-08T12:29:18 EST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ananthuProject.Test.E2EActionsStandAlone -->
+      <class name="ananthuProject.Test.BookStoreHome">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:18:50 EST" name="launchApplication" finished-at="2025-02-08T12:19:09 EST" duration-ms="19265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkFooterLinks()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:19:09 EST" name="checkFooterLinks" finished-at="2025-02-08T12:21:14 EST" duration-ms="125044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFooterLinks -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:21:14 EST" name="closeDriver" finished-at="2025-02-08T12:21:15 EST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:21:18 EST" name="launchApplication" finished-at="2025-02-08T12:21:37 EST" duration-ms="18824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:21:37 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:21:52 EST" duration-ms="15062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Arrivals]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:21:52 EST" name="closeDriver" finished-at="2025-02-08T12:21:56 EST" duration-ms="3900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:21:56 EST" name="launchApplication" finished-at="2025-02-08T12:22:08 EST" duration-ms="12491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:08 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:22:18 EST" duration-ms="10404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Recently Published]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:18 EST" name="closeDriver" finished-at="2025-02-08T12:22:19 EST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:19 EST" name="launchApplication" finished-at="2025-02-08T12:22:27 EST" duration-ms="8391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:27 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:22:37 EST" duration-ms="9415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York Times Best Sellers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:37 EST" name="closeDriver" finished-at="2025-02-08T12:22:37 EST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:37 EST" name="launchApplication" finished-at="2025-02-08T12:22:46 EST" duration-ms="8934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:46 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:22:51 EST" duration-ms="5296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Popular Nonfiction]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:51 EST" name="closeDriver" finished-at="2025-02-08T12:22:51 EST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:51 EST" name="launchApplication" finished-at="2025-02-08T12:22:58 EST" duration-ms="6474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:22:58 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:23:03 EST" duration-ms="4795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Art and Photography]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:03 EST" name="closeDriver" finished-at="2025-02-08T12:23:03 EST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:03 EST" name="launchApplication" finished-at="2025-02-08T12:23:10 EST" duration-ms="6794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:10 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:23:20 EST" duration-ms="10029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Biography and Memoir]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:20 EST" name="closeDriver" finished-at="2025-02-08T12:23:21 EST" duration-ms="1316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:21 EST" name="launchApplication" finished-at="2025-02-08T12:23:33 EST" duration-ms="12055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:33 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:23:41 EST" duration-ms="8178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:41 EST" name="closeDriver" finished-at="2025-02-08T12:23:41 EST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:41 EST" name="launchApplication" finished-at="2025-02-08T12:23:48 EST" duration-ms="6838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:48 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:23:55 EST" duration-ms="6686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cooking, Food and Drink]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:55 EST" name="closeDriver" finished-at="2025-02-08T12:23:55 EST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:23:55 EST" name="launchApplication" finished-at="2025-02-08T12:24:03 EST" duration-ms="7420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:03 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:24:10 EST" duration-ms="7621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Crafts and Hobbies]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:10 EST" name="closeDriver" finished-at="2025-02-08T12:24:10 EST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:10 EST" name="launchApplication" finished-at="2025-02-08T12:24:17 EST" duration-ms="6502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:17 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:24:24 EST" duration-ms="7413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Health and Wellness]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:24 EST" name="closeDriver" finished-at="2025-02-08T12:24:25 EST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:25 EST" name="launchApplication" finished-at="2025-02-08T12:24:32 EST" duration-ms="7433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:32 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:24:38 EST" duration-ms="6185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[History and Geography]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:38 EST" name="closeDriver" finished-at="2025-02-08T12:24:38 EST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:38 EST" name="launchApplication" finished-at="2025-02-08T12:24:47 EST" duration-ms="8024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:47 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:24:59 EST" duration-ms="12395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[House and Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:24:59 EST" name="closeDriver" finished-at="2025-02-08T12:25:01 EST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:01 EST" name="launchApplication" finished-at="2025-02-08T12:25:19 EST" duration-ms="17919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:19 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:25:33 EST" duration-ms="13641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:33 EST" name="closeDriver" finished-at="2025-02-08T12:25:33 EST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:33 EST" name="launchApplication" finished-at="2025-02-08T12:25:40 EST" duration-ms="7545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:40 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:25:50 EST" duration-ms="9335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New Age]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:50 EST" name="closeDriver" finished-at="2025-02-08T12:25:50 EST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:50 EST" name="launchApplication" finished-at="2025-02-08T12:25:57 EST" duration-ms="7223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:25:57 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:26:04 EST" duration-ms="6951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Philosophy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:04 EST" name="closeDriver" finished-at="2025-02-08T12:26:04 EST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:04 EST" name="launchApplication" finished-at="2025-02-08T12:26:11 EST" duration-ms="6503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:11 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:26:16 EST" duration-ms="5030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Psychology]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:16 EST" name="closeDriver" finished-at="2025-02-08T12:26:16 EST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:16 EST" name="launchApplication" finished-at="2025-02-08T12:26:22 EST" duration-ms="6376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:22 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:26:29 EST" duration-ms="6523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Religion and Spirituality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:29 EST" name="closeDriver" finished-at="2025-02-08T12:26:29 EST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:29 EST" name="launchApplication" finished-at="2025-02-08T12:26:37 EST" duration-ms="7787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:37 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:26:47 EST" duration-ms="9919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Science and Technology]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:47 EST" name="closeDriver" finished-at="2025-02-08T12:26:47 EST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:47 EST" name="launchApplication" finished-at="2025-02-08T12:26:54 EST" duration-ms="6506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:26:54 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:27:02 EST" duration-ms="7887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Self-Help and Relationships]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:02 EST" name="closeDriver" finished-at="2025-02-08T12:27:02 EST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:02 EST" name="launchApplication" finished-at="2025-02-08T12:27:09 EST" duration-ms="7134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:09 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:27:19 EST" duration-ms="9673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[True Crime]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:19 EST" name="closeDriver" finished-at="2025-02-08T12:27:19 EST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:19 EST" name="launchApplication" finished-at="2025-02-08T12:27:27 EST" duration-ms="7712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:27 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:27:34 EST" duration-ms="7638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[View All Nonfiction]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:34 EST" name="closeDriver" finished-at="2025-02-08T12:27:35 EST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:35 EST" name="launchApplication" finished-at="2025-02-08T12:27:41 EST" duration-ms="5992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:41 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:27:45 EST" duration-ms="4845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trending on #BookTok]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:45 EST" name="closeDriver" finished-at="2025-02-08T12:27:46 EST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:46 EST" name="launchApplication" finished-at="2025-02-08T12:27:54 EST" duration-ms="8035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:27:54 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:28:01 EST" duration-ms="7565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Award Winners]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:01 EST" name="closeDriver" finished-at="2025-02-08T12:28:02 EST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:02 EST" name="launchApplication" finished-at="2025-02-08T12:28:09 EST" duration-ms="7646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:09 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:28:16 EST" duration-ms="6523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Coffee Table Books]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:16 EST" name="closeDriver" finished-at="2025-02-08T12:28:16 EST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:16 EST" name="launchApplication" finished-at="2025-02-08T12:28:22 EST" duration-ms="6395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:22 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:28:29 EST" duration-ms="6456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Celebrity Book Club Picks]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:29 EST" name="closeDriver" finished-at="2025-02-08T12:28:29 EST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:29 EST" name="launchApplication" finished-at="2025-02-08T12:28:38 EST" duration-ms="8518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:38 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-08T12:28:47 EST" duration-ms="9958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonfiction]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Book-to-Screen Adaptations]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@624ea235]" started-at="2025-02-08T12:28:47 EST" name="closeDriver" finished-at="2025-02-08T12:28:48 EST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ananthuProject.Test.BookStoreHome -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

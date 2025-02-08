@@ -1,6 +1,7 @@
 package ananthuProject.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -28,6 +29,7 @@ import ananthuProject.POJO.MainObj;
 import ananthuProject.PageObjects.LandingPage;
 import ananthuProject.PageObjects.SelectCategory;
 import ananthuProject.TestComponents.BaseTest;
+import ananthuProject.TestComponents.Retry;
 import ananthuProject.data.DataReder;
 
 public class BookStoreHome extends BaseTest{
@@ -35,24 +37,23 @@ public class BookStoreHome extends BaseTest{
 
 		@Test
 		public void checkFooterLinks() throws InterruptedException {
-			
-		
+
 			landingpage.getFooterTitle();
 			
-			System.out.println(landingpage.getLandingPageTitle());
+			//System.out.println(landingpage.getLandingPageTitle());
 			
 			
 		}
 		
-		@Test(dataProvider="testdtaTest")
+		@Test(dataProvider="testdtaTest",retryAnalyzer=Retry.class)
 		public void goToCategory(String mainCat,String subCat) throws InterruptedException {
 			
 			SelectCategory selCat= new SelectCategory(driver);
 			String mainCategory=mainCat;
 			String SubCategory=subCat;
 			selCat.SelectSubCat(mainCategory,SubCategory);
-			
-			
+			boolean result=selCat.checkForPageHeading();
+			assertTrue(result);
 		}
 		
 		

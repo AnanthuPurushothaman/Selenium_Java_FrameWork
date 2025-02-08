@@ -9,6 +9,7 @@ import ananthuProject.TestComponents.BaseTest;
 
 public class E2EActionsStandAlone extends BaseTest {
 	
+	
 	@Test
 	public void addToCart() throws InterruptedException {
 		
@@ -21,16 +22,12 @@ public class E2EActionsStandAlone extends BaseTest {
 		SelectedBookPage bookPage=select.selecttheBook(bookName);
 		ShoppingCartPage cartPage=bookPage.addToCart();
 		cartPage.goToCart();
+		Thread.sleep(2000);
+		cartPage.proceedToCheckOut();
 		
 	}
 	
+
 	
-	@Test(dependsOnMethods="addToCart")
-	public void buyTheBook() {
-		
-		
-		
-		
-	}
 
 }
