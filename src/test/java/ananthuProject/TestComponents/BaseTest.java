@@ -20,6 +20,8 @@ public class BaseTest {
 	
 	public ChromeDriver initilizeDriver() {
 		
+		
+		
 		driver = new ChromeDriver();
 		driver.get("https://bookoutlet.ca/");
 		driver.manage().window().maximize();

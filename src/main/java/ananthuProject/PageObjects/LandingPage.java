@@ -80,9 +80,7 @@ WebElement bannernoticeText;
 		else {
 			
 			return false;
-		}
-		
-		
+		}	
 	}
 
 	

@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="11" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-09T12:08:44 EST" name="Suite" finished-at="2025-02-09T12:13:12 EST" duration-ms="267130">
+  <suite started-at="2025-02-09T18:16:39 EST" name="Suite" finished-at="2025-02-09T18:16:39 EST" duration-ms="533">
     <groups>
     </groups>
-    <test started-at="2025-02-09T12:08:44 EST" name="Test" finished-at="2025-02-09T12:13:12 EST" duration-ms="267130">
+    <test started-at="2025-02-09T18:16:39 EST" name="Test" finished-at="2025-02-09T18:16:39 EST" duration-ms="533">
       <class name="ananthuProject.Test.CheckVisibility">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:12:41 EST" name="launchApplication" finished-at="2025-02-09T12:12:55 EST" duration-ms="13548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="checkHomePageBanner()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:12:55 EST" name="checkHomePageBanner" finished-at="2025-02-09T12:12:56 EST" duration-ms="1129" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T18:16:39 EST" name="launchApplication" finished-at="2025-02-09T18:16:39 EST" duration-ms="1" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at org.testng.Assert.assertFalse(Assert.java:89)
-at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -55,36 +56,33 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHomePageBanner -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:12:56 EST" name="closeDriver" finished-at="2025-02-09T12:12:56 EST" duration-ms="504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:12:56 EST" name="launchApplication" finished-at="2025-02-09T12:13:03 EST" duration-ms="6800" status="PASS">
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="checkHomePageBanner()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:13:03 EST" name="checkHomePageBanner" finished-at="2025-02-09T12:13:04 EST" duration-ms="324" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="checkHomePageBanner()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T18:16:39 EST" name="checkHomePageBanner" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at org.testng.Assert.assertFalse(Assert.java:89)
-at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -111,89 +109,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHomePageBanner -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:13:04 EST" name="closeDriver" finished-at="2025-02-09T12:13:04 EST" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:13:04 EST" name="launchApplication" finished-at="2025-02-09T12:13:10 EST" duration-ms="6510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="checkHomePageBanner()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:13:10 EST" name="checkHomePageBanner" finished-at="2025-02-09T12:13:10 EST" duration-ms="279" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at org.testng.Assert.assertFalse(Assert.java:89)
-at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHomePageBanner -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T12:13:11 EST" name="closeDriver" finished-at="2025-02-09T12:13:12 EST" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.CheckVisibility@55de24cc]" started-at="2025-02-09T18:16:39 EST" name="closeDriver" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- ananthuProject.Test.CheckVisibility -->
       <class name="ananthuProject.Test.E2EActionsStandAlone">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T12:12:13 EST" name="launchApplication" finished-at="2025-02-09T12:12:22 EST" duration-ms="8777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="addToCart()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T12:12:22 EST" name="addToCart" finished-at="2025-02-09T12:12:39 EST" duration-ms="17359" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T18:16:39 EST" name="launchApplication" finished-at="2025-02-09T18:16:39 EST" duration-ms="1" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "myBook" is null]]>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "myBook" is null
-at ananthuProject.PageObjects.SelectCategory.selecttheBook(SelectCategory.java:82)
-at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:22)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -222,33 +168,184 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addToCart()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T18:16:39 EST" name="addToCart" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T12:12:40 EST" name="closeDriver" finished-at="2025-02-09T12:12:41 EST" duration-ms="1127" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.E2EActionsStandAlone@333d4a8c]" started-at="2025-02-09T18:16:39 EST" name="closeDriver" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- ananthuProject.Test.E2EActionsStandAlone -->
       <class name="ananthuProject.Test.BookStoreHome">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:08:44 EST" name="launchApplication" finished-at="2025-02-09T12:08:52 EST" duration-ms="7906" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="launchApplication" finished-at="2025-02-09T18:16:39 EST" duration-ms="12" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:08:52 EST" name="checkFooterLinks" finished-at="2025-02-09T12:09:57 EST" duration-ms="64407" status="PASS">
+        <test-method signature="checkFooterLinks()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="checkFooterLinks" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:09:57 EST" name="closeDriver" finished-at="2025-02-09T12:09:57 EST" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="closeDriver" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:09:59 EST" name="launchApplication" finished-at="2025-02-09T12:10:12 EST" duration-ms="13200" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="launchApplication" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:10:12 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T12:10:39 EST" duration-ms="27495" status="PASS">
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -261,66 +358,67 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCategory -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:10:39 EST" name="closeDriver" finished-at="2025-02-09T12:10:52 EST" duration-ms="12427" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="closeDriver" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:10:52 EST" name="launchApplication" finished-at="2025-02-09T12:11:05 EST" duration-ms="13705" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="launchApplication" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:05 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T12:11:18 EST" duration-ms="12779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nonfiction]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Recently Published]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCategory -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:18 EST" name="closeDriver" finished-at="2025-02-09T12:11:18 EST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:18 EST" name="launchApplication" finished-at="2025-02-09T12:11:32 EST" duration-ms="13269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:32 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T12:11:51 EST" duration-ms="18924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nonfiction]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[New York Times Best Sellers]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCategory -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:51 EST" name="closeDriver" finished-at="2025-02-09T12:11:51 EST" duration-ms="891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:11:51 EST" name="launchApplication" finished-at="2025-02-09T12:12:01 EST" duration-ms="9238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:12:01 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T12:12:13 EST" duration-ms="12309" status="PASS">
+        <test-method signature="goToCategory(java.lang.String,java.lang.String)[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="goToCategory" data-provider="testdtaTest" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -333,10 +431,59 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\gopik\eclipse-workspace\BookStoreFrameWork\src\main\java\ananthuProject\resources\GlobalData.properties (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at ananthuProject.TestComponents.BaseTest.initilizeDriver(BaseTest.java:30)
+at ananthuProject.TestComponents.BaseTest.launchApplication(BaseTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCategory -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T12:12:13 EST" name="closeDriver" finished-at="2025-02-09T12:12:13 EST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:ananthuProject.Test.BookStoreHome@536f2a7e]" started-at="2025-02-09T18:16:39 EST" name="closeDriver" finished-at="2025-02-09T18:16:39 EST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

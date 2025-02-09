@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="ananthuProject.TestComponents.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
     <classes>
-      <class name="ananthuProject.Test.CheckVisibility">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="closeDriver"/>
-          <include name="checkHomePageBanner"/>
-        </methods>
-      </class> <!-- ananthuProject.Test.CheckVisibility -->
       <class name="ananthuProject.Test.E2EActionsStandAlone">
         <methods>
           <include name="addToCart"/>
@@ -20,13 +10,6 @@
           <include name="closeDriver"/>
         </methods>
       </class> <!-- ananthuProject.Test.E2EActionsStandAlone -->
-      <class name="ananthuProject.Test.BookStoreHome">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="closeDriver"/>
-          <include name="goToCategory"/>
-        </methods>
-      </class> <!-- ananthuProject.Test.BookStoreHome -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

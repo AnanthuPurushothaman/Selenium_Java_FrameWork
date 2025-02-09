@@ -13,6 +13,14 @@
           <include name="checkHomePageBanner"/>
         </methods>
       </class> <!-- ananthuProject.Test.CheckVisibility -->
+      <class name="ananthuProject.Test.BookStoreHome">
+        <methods>
+          <include name="checkFooterLinks"/>
+          <include name="launchApplication"/>
+          <include name="closeDriver"/>
+          <include name="goToCategory"/>
+        </methods>
+      </class> <!-- ananthuProject.Test.BookStoreHome -->
       <class name="ananthuProject.Test.E2EActionsStandAlone">
         <methods>
           <include name="addToCart"/>

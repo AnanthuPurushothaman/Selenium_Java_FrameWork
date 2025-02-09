@@ -20,8 +20,6 @@ public class ShoppingCartPage extends AbstractComponent {
 	@FindBy(xpath="//*[name()='path' and contains(@d,'M15.55 13c')]")
 	WebElement goToShoppingCart;
 	
-	@FindBy(css="a[aria-label='proceed to checkout']")
-			WebElement checkOut;
 	
 	public void goToCart(){
 		
@@ -30,7 +28,8 @@ public class ShoppingCartPage extends AbstractComponent {
 	  
 	}
 	
-	public void proceedToCheckOut() {
-		checkOut.click();
+	public String getPageTitle() {
+	  String pageTitle= driver.getTitle();
+	   return pageTitle;
 	}
 }

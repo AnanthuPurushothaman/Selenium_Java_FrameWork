@@ -1,11 +1,14 @@
 package ananthuProject.Test;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 import ananthuProject.PageObjects.SelectCategory;
 import ananthuProject.PageObjects.SelectedBookPage;
 import ananthuProject.PageObjects.ShoppingCartPage;
 import ananthuProject.TestComponents.BaseTest;
+import ananthuProject.TestComponents.Retry;
 
 public class E2EActionsStandAlone extends BaseTest {
 	
@@ -22,8 +25,9 @@ public class E2EActionsStandAlone extends BaseTest {
 		SelectedBookPage bookPage=select.selecttheBook(bookName);
 		ShoppingCartPage cartPage=bookPage.addToCart();
 		cartPage.goToCart();
-		Thread.sleep(2000);
-		cartPage.proceedToCheckOut();
+		Thread.sleep(3000);
+	    System.out.println(cartPage.getPageTitle());
+		assertEquals(cartPage.getPageTitle(),bookName);
 		
 	}
 	
