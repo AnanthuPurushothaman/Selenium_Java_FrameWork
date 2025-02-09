@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ananthuProject.Test.CheckVisibility">
+      <class name="ananthuProject.Test.BookStoreHome">
         <methods>
+          <include name="checkFooterLinks"/>
           <include name="launchApplication"/>
           <include name="closeDriver"/>
-          <include name="checkHomePageBanner"/>
         </methods>
-      </class> <!-- ananthuProject.Test.CheckVisibility -->
+      </class> <!-- ananthuProject.Test.BookStoreHome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -67,7 +67,7 @@ WebElement bannernoticeText;
 		}
 		titleList.stream().forEach(b->System.out.println(b));
 		driver.switchTo().window(mainWindow);
-		driver.close();
+		//driver.close();
 		
 	}
 	

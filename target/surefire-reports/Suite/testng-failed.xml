@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="ananthuProject.Test.CheckVisibility">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="closeDriver"/>
+          <include name="checkHomePageBanner"/>
+        </methods>
+      </class> <!-- ananthuProject.Test.CheckVisibility -->
       <class name="ananthuProject.Test.E2EActionsStandAlone">
         <methods>
           <include name="addToCart"/>

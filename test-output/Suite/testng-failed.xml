@@ -6,21 +6,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="ananthuProject.Test.BookStoreHome">
+      <class name="ananthuProject.Test.CheckVisibility">
         <methods>
           <include name="launchApplication"/>
           <include name="closeDriver"/>
-          <include name="goToCategory" invocation-numbers="19 12"/>
+          <include name="checkHomePageBanner"/>
         </methods>
-      </class> <!-- ananthuProject.Test.BookStoreHome -->
+      </class> <!-- ananthuProject.Test.CheckVisibility -->
       <class name="ananthuProject.Test.E2EActionsStandAlone">
         <methods>
           <include name="addToCart"/>
           <include name="launchApplication"/>
           <include name="closeDriver"/>
-          <include name="buyTheBook"/>
         </methods>
       </class> <!-- ananthuProject.Test.E2EActionsStandAlone -->
+      <class name="ananthuProject.Test.BookStoreHome">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="closeDriver"/>
+          <include name="goToCategory"/>
+        </methods>
+      </class> <!-- ananthuProject.Test.BookStoreHome -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 08 12:18:50 EST 2025</td>
+<td>Started on:</td><td>Sun Feb 09 12:08:44 EST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>628 seconds (628576 ms)</td>
+<tr><td>Total time:</td><td>267 seconds (267130 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,57 +77,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='ananthuProject.Test.E2EActionsStandAlone.addToCart()'><b>addToCart</b><br>Test class: ananthuProject.Test.E2EActionsStandAlone</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.110)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819e15f0ed14a27347629b497adcb87a, clickElement {id=1D174C2AD5A96B7A9A63EE66364F89FC_element_283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\gopik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2889/devtool..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (819e15f0ed14a27347629b497adcb87a)] -&gt; css selector: a[aria-label=&apos;proceed to checkout&apos;]]
-Session ID: 819e15f0ed14a27347629b497adcb87a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at ananthuProject.PageObjects.ShoppingCartPage.proceedToCheckOut(ShoppingCartPage.java:34)
-	at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace296552796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace296552796'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.110)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819e15f0ed14a27347629b497adcb87a, clickElement {id=1D174C2AD5A96B7A9A63EE66364F89FC_element_283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\gopik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2889/devtool..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (819e15f0ed14a27347629b497adcb87a)] -&gt; css selector: a[aria-label=&apos;proceed to checkout&apos;]]
-Session ID: 819e15f0ed14a27347629b497adcb87a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at ananthuProject.PageObjects.ShoppingCartPage.proceedToCheckOut(ShoppingCartPage.java:34)
-	at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:26)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;myBook&quot; is null
+	at ananthuProject.PageObjects.SelectCategory.selecttheBook(SelectCategory.java:82)
+	at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472950462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472950462'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;myBook&quot; is null
+	at ananthuProject.PageObjects.SelectCategory.selecttheBook(SelectCategory.java:82)
+	at ananthuProject.Test.E2EActionsStandAlone.addToCart(E2EActionsStandAlone.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -138,7 +95,7 @@ Session ID: 819e15f0ed14a27347629b497adcb87a
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -159,8 +116,53 @@ Session ID: 819e15f0ed14a27347629b497adcb87a
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>22</td>
-<td>ananthuProject.Test.E2EActionsStandAlone@465232e9</td></tr>
+<td>17</td>
+<td>ananthuProject.Test.E2EActionsStandAlone@333d4a8c</td></tr>
+<tr>
+<td title='ananthuProject.Test.CheckVisibility.checkHomePageBanner()'><b>checkHomePageBanner</b><br>Test class: ananthuProject.Test.CheckVisibility</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace999211009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999211009'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>ananthuProject.Test.CheckVisibility@55de24cc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,140 +173,129 @@ Session ID: 819e15f0ed14a27347629b497adcb87a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Art and Photography</td>
+<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, New York Times Best Sellers</td>
 <td></td>
-<td>4</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Biography and Memoir</td>
-<td></td>
-<td>10</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
+<td>18</td>
+<td>ananthuProject.Test.BookStoreHome@536f2a7e</td></tr>
 <tr>
 <td title='ananthuProject.Test.BookStoreHome.checkFooterLinks()'><b>checkFooterLinks</b><br>Test class: ananthuProject.Test.BookStoreHome</td>
 <td></td>
-<td>125</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Trending on #BookTok</td>
-<td></td>
-<td>4</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Popular Nonfiction</td>
-<td></td>
-<td>5</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, History and Geography</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, View All Nonfiction</td>
-<td></td>
-<td>7</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Business</td>
-<td></td>
-<td>8</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, New Age</td>
-<td></td>
-<td>9</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Crafts and Hobbies</td>
-<td></td>
-<td>7</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Religion and Spirituality</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Award Winners</td>
-<td></td>
-<td>7</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Health and Wellness</td>
-<td></td>
-<td>7</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Science and Technology</td>
-<td></td>
-<td>9</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Self-Help and Relationships</td>
-<td></td>
-<td>7</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Celebrity Book Club Picks</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Nature</td>
-<td></td>
-<td>13</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Philosophy</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, New York Times Best Sellers</td>
-<td></td>
-<td>9</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Coffee Table Books</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
+<td>64</td>
+<td>ananthuProject.Test.BookStoreHome@536f2a7e</td></tr>
 <tr>
 <td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Recently Published</td>
 <td></td>
-<td>10</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Cooking, Food and Drink</td>
-<td></td>
-<td>6</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, True Crime</td>
-<td></td>
-<td>9</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Psychology</td>
-<td></td>
-<td>5</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, House and Home</td>
-<td></td>
 <td>12</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
-<tr>
-<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Book-to-Screen Adaptations</td>
-<td></td>
-<td>9</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
+<td>ananthuProject.Test.BookStoreHome@536f2a7e</td></tr>
 <tr>
 <td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, New Arrivals</td>
 <td></td>
-<td>15</td>
-<td>ananthuProject.Test.BookStoreHome@624ea235</td></tr>
+<td>27</td>
+<td>ananthuProject.Test.BookStoreHome@536f2a7e</td></tr>
+<tr>
+<td title='ananthuProject.Test.BookStoreHome.goToCategory()'><b>goToCategory</b><br>Test class: ananthuProject.Test.BookStoreHome<br>Parameters: Nonfiction, Book-to-Screen Adaptations</td>
+<td></td>
+<td>12</td>
+<td>ananthuProject.Test.BookStoreHome@536f2a7e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ananthuProject.Test.CheckVisibility.checkHomePageBanner()'><b>checkHomePageBanner</b><br>Test class: ananthuProject.Test.CheckVisibility</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1017997535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1017997535'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>ananthuProject.Test.CheckVisibility@55de24cc</td></tr>
+<tr>
+<td title='ananthuProject.Test.CheckVisibility.checkHomePageBanner()'><b>checkHomePageBanner</b><br>Test class: ananthuProject.Test.CheckVisibility</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1701798620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1701798620'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at ananthuProject.Test.CheckVisibility.checkHomePageBanner(CheckVisibility.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>ananthuProject.Test.CheckVisibility@55de24cc</td></tr>
 </table><p>
 </body>
 </html>

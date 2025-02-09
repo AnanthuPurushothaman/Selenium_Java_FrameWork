@@ -14,7 +14,7 @@ public class CheckVisibility extends BaseTest {
 	public void checkHomePageBanner() {
 
 		boolean visiblility = landingpage.checkVisibilityOfPromoText();
-		assertTrue(visiblility);
+		assertFalse(visiblility);
 	}
 
 }

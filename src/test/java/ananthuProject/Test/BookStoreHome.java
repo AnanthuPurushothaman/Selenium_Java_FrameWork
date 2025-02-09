@@ -45,7 +45,7 @@ public class BookStoreHome extends BaseTest{
 			
 		}
 		
-		@Test(dataProvider="testdtaTest",retryAnalyzer=Retry.class)
+		@Test(dataProvider="testdtaTest")
 		public void goToCategory(String mainCat,String subCat) throws InterruptedException {
 			
 			SelectCategory selCat= new SelectCategory(driver);
